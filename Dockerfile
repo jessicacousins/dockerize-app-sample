@@ -12,5 +12,9 @@ RUN npm install
 COPY index.js /app/index.js
 
 # the program to run
-ENTRYPOINT [ "npm", "start" ]
+# previous code 
+# ENTRYPOINT [ "npm", "start" ]
+# new code 
+EXPOSE 3000
+ENTRYPOINT node index.js
 
